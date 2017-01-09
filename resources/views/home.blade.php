@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Bandit Test</title>
+        <title>Laravel</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -67,13 +67,10 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Type a Twitter username:</div>
-                <br />
+                <div class="title">Bandit Test</div>
+                
                 <div>
-                    <form name="searchForm" method="get" action="search/tweets">
-                        <input type="text" id="username" name="username" />
-                        <input type="submit" class="btn btn-primary" value="Search" />
-                    </form>
+                    <h4>Result: {{ Twitter::result() }} </h4>
                 </div>
             </div>
         </div>
